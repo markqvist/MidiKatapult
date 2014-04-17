@@ -102,10 +102,7 @@ void cleanup() {
 }
 
 public void stop() {
-  //debug("Cleaning up...");
   cleanup();
-  //debug("Cleanup done");
-  println("Coding monkey and sewing monkey are the supreme rulers of the world");
   clearDisplay();
   super.stop();
 } 
