@@ -1,0 +1,276 @@
+// <- These two slashes means "this line is a comment"
+
+// Lets start creating a layout.
+// First of all, we need at least one page, so lets create one by
+// writing:
+
+page 1 Transport & EQ
+
+// Pages can be named as well. Just write the name after the
+// page number, as above.
+
+// So far, so good. Now let's create some controls.
+// First some hold and toggle buttons:
+
+button 0 0 toggle
+button 1 0 toggle
+button 2 0 hold
+button 3 0 toggle
+
+button 0 1 hold
+button 1 1 hold
+button 2 1 hold
+button 3 1 hold
+
+// And then some faders:
+
+yfader 0 7 5 takeover=1
+yfader 1 7 5 takeover=1
+yfader 2 7 5 takeover=1
+yfader 3 7 5 takeover=1
+
+// These faders have takeover activated on them.
+// This means that they'll move smoothly from one
+// value to another. This takeover is set to the
+// fastest (1 millisecond). If you want them to
+// update slower, increase the takeover value.
+
+// That fills up the left half of the Launchpad
+// Lets just duplicate it for the other half,
+// This will serve as a good starting point
+// for controlling two decks in Traktor, for
+// example.
+
+button 4 0 toggle
+button 5 0 toggle
+button 6 0 hold
+button 7 0 toggle
+
+button 4 1 hold
+button 5 1 hold
+button 6 1 hold
+button 7 1 hold
+
+yfader 4 7 5 takeover=1
+yfader 5 7 5 takeover=1
+yfader 6 7 5 takeover=1
+yfader 7 7 5 takeover=1
+
+button 0 2 toggle
+button 1 2 toggle
+button 2 2 hold
+button 3 2 hold
+button 4 2 toggle
+button 5 2 toggle
+button 6 2 hold
+button 7 2 hold
+
+// For demonstration purposes, heres a couple more pages.
+// These are not mapped to anything in the supplied
+// Traktor layouts, so you can go ahead and assign the
+// controls yourself :) Get creative!
+
+page 2 Some sliders and buttons
+
+button 0 0 hold
+button 1 0 hold
+button 2 0 hold
+
+button 5 0 hold
+button 6 0 hold
+button 7 0 hold
+
+yslider 0 6 6 5
+yslider 1 6 6 5
+yslider 2 6 6 5
+
+yslider 5 6 6 5
+yslider 6 6 6 5
+yslider 7 6 6 5
+
+button 0 7 hold
+button 1 7 hold
+button 2 7 hold
+
+button 5 7 hold
+button 6 7 hold
+button 7 7 hold
+
+yslider 3 6 7 4
+yslider 4 6 7 4
+
+button 3 7 toggle
+button 4 7 toggle
+
+page 3 More buttons
+
+button 0 0 hold
+button 1 0 hold
+button 2 0 hold
+button 3 0 hold
+button 4 0 hold
+button 5 0 hold
+button 6 0 hold
+button 7 0 hold
+
+button 0 1 hold
+button 1 1 hold
+button 2 1 hold
+button 3 1 hold
+button 4 1 hold
+button 5 1 hold
+button 6 1 hold
+button 7 1 hold
+
+button 0 2 hold
+button 1 2 hold
+button 2 2 hold
+button 3 2 hold
+button 4 2 hold
+button 5 2 hold
+button 6 2 hold
+button 7 2 hold
+
+button 0 3 hold
+button 1 3 hold
+button 2 3 hold
+button 3 3 hold
+button 4 3 hold
+button 5 3 hold
+button 6 3 hold
+button 7 3 hold
+
+page 4 Controller chaining
+
+xfader 0 0 8 takeover=8
+yfader 0 7 6
+yfader 2 7 5
+yfader 4 7 3
+yfader 6 7 4
+
+button 4 2 toggle
+button 5 3 toggle
+button 6 2 toggle
+button 7 2 toggle
+
+chain 0 0 to 0 7
+chain 0 7 to 2 7
+chain 2 7 to 4 7
+chain 4 7 to 6 7
+
+chain 4 2 to 0 7
+chain 5 3 to 2 7
+chain 6 2 to 4 7
+chain 7 2 to 6 7
+
+page 5 Custom color examples
+
+oncolor green
+
+offcolor yellow
+button 0 0 toggle
+button 0 1 toggle
+button 0 2 toggle
+button 0 3 toggle
+button 0 4 toggle
+button 0 5 toggle
+button 0 6 toggle
+button 0 7 toggle
+
+offcolor red
+button 1 0 toggle
+button 1 1 toggle
+button 1 2 toggle
+button 1 3 toggle
+button 1 4 toggle
+button 1 5 toggle
+button 1 6 toggle
+button 1 7 toggle
+
+offcolor yellow
+button 2 0 toggle
+button 2 1 toggle
+button 2 2 toggle
+button 2 3 toggle
+button 2 4 toggle
+button 2 5 toggle
+button 2 6 toggle
+button 2 7 toggle
+
+offcolor red
+button 3 0 toggle
+button 3 1 toggle
+button 3 2 toggle
+button 3 3 toggle
+button 3 4 toggle
+button 3 5 toggle
+button 3 6 toggle
+button 3 7 toggle
+
+offcolor yellow
+button 4 0 toggle
+button 4 1 toggle
+button 4 2 toggle
+button 4 3 toggle
+button 4 4 toggle
+button 4 5 toggle
+button 4 6 toggle
+button 4 7 toggle
+
+offcolor red
+button 5 0 toggle
+button 5 1 toggle
+button 5 2 toggle
+button 5 3 toggle
+button 5 4 toggle
+button 5 5 toggle
+button 5 6 toggle
+button 5 7 toggle
+
+offcolor yellow
+button 6 0 toggle
+button 6 1 toggle
+button 6 2 toggle
+button 6 3 toggle
+button 6 4 toggle
+button 6 5 toggle
+button 6 6 toggle
+button 6 7 toggle
+
+offcolor red
+button 7 0 toggle
+button 7 1 toggle
+button 7 2 toggle
+button 7 3 toggle
+button 7 4 toggle
+button 7 5 toggle
+button 7 6 toggle
+button 7 7 toggle
+
+defaultcolors
+
+page 6 Four 2D Pads
+
+offcolor green
+oncolor red
+pad 0 0 4 4 takeover=1
+pad 4 4 4 4 takeover=1
+
+offcolor amber
+pad 4 0 4 4
+pad 0 4 4 4
+
+page 7 One big 2D Pad
+pad 0 0 8 8 takeover=4
+
+defaultcolors
+
+page 8 Drumracks
+drumrack 0 0 4 4 3 c 115
+drumrack 4 4 4 4 5 c 120
+
+page 9 Keyboard shortcuts
+kbd 0 0 command+tab
+kbd 1 0 shift+a
+kbd 2 0 b
+kbd 3 0 c

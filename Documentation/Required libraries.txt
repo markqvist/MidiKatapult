@@ -1,0 +1,6 @@
+These libraries are required for Katapult to work:
+
+	- oscP5
+	- proMIDI
+
+Also, on OS X at least the "libmmj" java extension is required for Katapult to be able to receive MIDI input.

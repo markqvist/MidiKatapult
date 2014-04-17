@@ -1,0 +1,72 @@
+This is a brief description of the various control types, for use in the layout.txt file.
+
+Hold button
+	Created with	: button X Y hold
+	example		: button 3 3 hold
+
+Toggle button
+	Created with	: button X Y toggle
+	example		: button 3 3 toggle
+
+Horizontal fader
+	Created with	: xfader X Y SIZE
+	example		: xfader 0 0 8
+
+Vertical fader
+	Created with	: yfader X Y SIZE
+	example		: yfader 0 7 8
+
+Horizontal slider
+	Created with	: xslider X Y SIZE GRANULARITY
+	example		: xslider 0 0 8 5
+
+Vertical slider
+	Created with	: yslider X Y SIZE GRANULARITY
+	example		: yslider 0 7 8 5
+
+Indicator LED
+	Created with	: led X Y
+	example		: led 0 7
+
+2D Pad
+	Created with	: pad X Y XSIZE YSIZE
+	example		: pad 0 0 7 7
+
+Other entries:
+
+New page
+	Created with	: page NUMBER
+	example		: page 1
+	Description	: All controls must be mapped to a specific page
+			  Start the layouts.txt file with the line "page 1"
+			  Define controls for this page beneath it.
+			  When done, add another page entry, "page 2",
+			  define more controls and so forth.
+
+Controller chaining
+	Created with	: chain X1 Y1 to X2 Y2 [send]
+	example		: chain 0 0 to 4 0 yes
+	Description	: The above example chains the controller at 0,0
+			  in the grid to the controller at 4,0 and
+			  instructs the chained controller to also transmit
+			  midi when it is updated. The send argument is
+			  optional, and if it is not set, only the internal
+			  state of the controller will be updated, but it
+			  won't transmit any MIDI, unless physically
+			  activated. Chaining is very useful when you want
+			  several different controls to influence the same
+			  parameter in a piece of software for example.
+			  This will ensure that all the controls on the
+			  Launchpad are in sync, so you wont get any
+			  erratic "jumps".
+
+Bi-directional communication
+	Katapult can handle bi-directional communication, meaning that, as
+	an example, when you change a virtual fader in a piece of software,
+	the corresponding fader on the Launchpad surface is also updated.
+	To use this feature, you must assign MIDI output from your software
+	using the following format: "MIDI channel=Page, CC=(Y*8+X)".
+	So, the MIDI channel your software outputs to determines what page
+	the control is located on, and the CC number corresponds to the
+	position in the grid, where the control is located.
+

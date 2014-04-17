@@ -1,0 +1,133 @@
+// <- These two slashes means "this line is a comment"
+
+// Lets start creating a layout.
+// First of all, we need at least one page, so lets create one by
+// writing:
+
+page 1
+
+// So far, so good. Now let's create some controls.
+// First some hold and toggle buttons:
+
+button 0 0 toggle
+button 1 0 toggle
+button 2 0 hold
+button 3 0 toggle
+
+button 0 1 hold
+button 1 1 hold
+button 2 1 hold
+button 3 1 hold
+
+// And then some faders:
+
+yfader 0 7 5
+yfader 1 7 5
+yfader 2 7 5
+yfader 3 7 5
+
+// That fills up the left half of the Launchpad
+// Lets just duplicate it for the other half,
+// This will serve as a good starting point
+// for controlling two decks in Traktor, for
+// example.
+
+button 4 0 toggle
+button 5 0 toggle
+button 6 0 hold
+button 7 0 toggle
+
+button 4 1 hold
+button 5 1 hold
+button 6 1 hold
+button 7 1 hold
+
+yfader 4 7 5
+yfader 5 7 5
+yfader 6 7 5
+yfader 7 7 5
+
+button 0 2 toggle
+button 1 2 toggle
+button 2 2 hold
+button 3 2 hold
+button 4 2 toggle
+button 5 2 toggle
+button 6 2 hold
+button 7 2 hold
+
+// For demonstration purposes, heres a couple more pages.
+// These are not mapped to anything in the supplied
+// Traktor layouts, so you can go ahead and assign the
+// controls yourself :) Get creative!
+
+page 2
+
+button 0 0 hold
+button 1 0 hold
+button 2 0 hold
+
+button 5 0 hold
+button 6 0 hold
+button 7 0 hold
+
+yslider 0 6 6 5
+yslider 1 6 6 5
+yslider 2 6 6 5
+
+yslider 5 6 6 5
+yslider 6 6 6 5
+yslider 7 6 6 5
+
+button 0 7 hold
+button 1 7 hold
+button 2 7 hold
+
+button 5 7 hold
+button 6 7 hold
+button 7 7 hold
+
+yslider 3 6 7 4
+yslider 4 6 7 4
+
+button 3 7 toggle
+button 4 7 toggle
+
+page 3
+
+button 0 0 hold
+button 1 0 hold
+button 2 0 hold
+button 3 0 hold
+button 4 0 hold
+button 5 0 hold
+button 6 0 hold
+button 7 0 hold
+
+button 0 1 hold
+button 1 1 hold
+button 2 1 hold
+button 3 1 hold
+button 4 1 hold
+button 5 1 hold
+button 6 1 hold
+button 7 1 hold
+
+button 0 2 hold
+button 1 2 hold
+button 2 2 hold
+button 3 2 hold
+button 4 2 hold
+button 5 2 hold
+button 6 2 hold
+button 7 2 hold
+
+button 0 3 hold
+button 1 3 hold
+button 2 3 hold
+button 3 3 hold
+button 4 3 hold
+button 5 3 hold
+button 6 3 hold
+button 7 3 hold
+

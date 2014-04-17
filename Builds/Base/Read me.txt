@@ -1,0 +1,125 @@
+Version 1.2
+
+Thank you for downloading Katapult!
+
+To get started, read the "Katapult Documentation" PDF.
+
+Important!
+You need Java installed to run Katapult. You need at least version 1.6.
+
+Very important!!
+If you are using Mac, DO NOT run Katapult in 64-bit mode. Katapult is NOT STABLE in 64-bit mode! There is an issue with java when running in 64-bit mode that messes up Katapults thread syncronization. This will most probably make Katapult crash at some point, or make it eat a lot of CPU power. If you are experiencing problems, please check whether Katapult runs in 64-bit mode. You can do this by opening up "Activity Monitor". If "Intel (64-bit)" is listed in the "Kind" column for Katapult, please change you Java settings to use the 32-bit VM instead. Open up "Java Preferences" and drag the 32-bit option to the top of the list. Also, try showing info (cmd-i) on the Katapult application, and check the "Run in 32-bit mode" checkbox.
+
+If you are using Snow Leopard, make sure you have updated to at least 10.6.2, since there was a Java bug in prior versions, that will make Katapult cry. Also, make sure you have the latest Java updates from
+Apple.
+
+If you are having trouble starting Katapult, please update your Java version. Also, if Katapult cannot detect your Launchpad, please make sure that you have the latest Launchpad USB drivers installed. These can be dawnloaded from Novations website at http://www.novationmusic.com/support/launchpad/.
+
+www.midikatapult.com
+info@midikatapult.com
+
+Important! Please see the "Known Issues" section, for notes on a bug related to Carbon based virtual MIDI drivers (seems to have been fixed
+in Apples latest Java updated as of 25th of May 2010).
+
+-----------
+Changes from 1.139 -> 1.2
+    - Ability to run Katapult in usermode 1/2
+      alongside Ableton Live's native Launchpad
+      functions
+    - Ability to map the round side-buttons
+    - Ability to invert drumrack note order
+    - Ability to customize velocity on buttons
+    - Ability to use note controls in toggle mode
+    - New control: Cross-fader
+    - New control: inverted vertical fader
+    - New control: inverted horizontal fader
+    - Fixed a bug where octaves weren't recognized
+      properly.
+    - A lot of small optimizations and fixes :)
+    - Updated documentation
+
+Changes from 1.132 -> 1.139
+    - iPad support
+    - Multi-client network support
+
+Changes from 1.13 -> 1.132
+    - Fixed a bug that caused button color
+      to get out of sync with Traktor 1.2.6
+
+Changes from 1.12 -> 1.13
+    - Added a persistence option to buttons
+    - Added new control: PC
+    - Added "headless" mode
+    - Added text-scroller demo (see config.txt)
+    - Fixed a bug with flipping pages when there was
+      gaps between the pages    - Fixed a bug with note-off events not being sent
+      on custom channels    - Fixed a bug where chained controls wouldnÕt send
+      updates (see docs)    - Fixed a bug where custom channels would send on
+      the wrong channel    - Documentation updated
+
+Changes from 1.12 -> 1.121
+    - Fixed a bug that caused drumracks to be duplicated
+
+Changes from 1.1 -> 1.12
+    - Added new control: CC
+    - Added new control: Raw note
+    - Added new control: Drumrack
+    - Added new control: Keyboard shortcut
+    - Added ability to customise send channels
+    - Added ability to reload layouts on the fly
+    - Updated documentation (+ fixed some errors)
+
+Changes from 1.052 -> 1.1
+    - Added new control: Progress bar
+    - Added new control: Meter
+    - Added new control: Note
+    - Optimised takeover implementation
+    - Various code optimisations
+    - Bugfixes
+    - Documentation updated
+
+Changes from 1.05 -> 1.052
+    - Minor bugfixes
+    - Updated user-interface explanations
+    - Minor updates to documentation
+
+Changes from 1.042 -> 1.05
+    - Updated documentation
+    - Fixed a bug that caused the Launchpad buttons
+      to lock up right after starting
+    - Fixed a bug that prevented the Launchpad buttons from when
+      Katapult was started
+      
+Changes from 1.04 -> 1.042
+    - Fixed a bug that might have made controls lock up
+      for some users.
+    - Extended documentation (takeover, added more descriptions)
+
+Changes from 1.03 -> 1.04
+	- Implemented 2D pads
+	- Implemented custom inertia/takeover on faders
+	- Implemented custom inertia/takeover on pads
+	- Added ability to save device configuration
+	- Added page naming
+	- Fixed text file formatting in Windows
+
+Changes from 1.02 -> 1.03
+
+	- Fixed a bug where bi-directional communication would
+	  only work for the first page
+	- Added indicator controls
+	- Added ability to customize colors;
+	  default & on individual controls
+	- Added configuration file
+	- Added ability to specify devices in configuration file
+	- Added silent mode (specified in configuration file)
+
+-----------
+Known issues:
+
+- [This issue has been resolved as of Apple's May 2010 Java update]
+Sometimes, Katapult won't start due to a memory access error, if other MIDI applications are already running. If this happens, try closing the other applications, start Katapult, and then start up the other applications again. Please see the documentation pdf for more info on this issue. Unfortunately, I am unable to provide a fix at this time, since the bug resides in Apples Java implementation. You can get around this issue by using IAC drivers.
+
+-----------
+
+Happy Katapulting!

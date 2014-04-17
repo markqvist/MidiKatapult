@@ -1,0 +1,82 @@
+abletonlive=yes
+liveusermode=1
+//headless=yes
+
+// <- These two slashes means, that a line is a comment.
+// If you want to use any of the example configuration lines
+// in this file, remove the slashes, and the following space,
+// so the config command is the very first thing on the line.
+// For example: "in=Traktor Out".
+
+// This is Katapults config file. In this file, you can
+// define various options, such as MIDI input/output devices
+// and default colors for controls
+
+// You can set the input device with a line like this:
+
+// in=Traktor Out
+
+// You can set the output device with a line like this:
+
+// out=Traktor In
+
+// If you want Katapult to run in silent mode, use this line:
+
+// silent=yes
+
+// In silent mode, Katapult will not display any user interface,
+// thus saving CPU and making updates faster. This is especially
+// a good idea if you want to use MIDI intensive displays on the
+// Launchpad, such as volume output meters.
+// Note that you MUST specify input and output devices in this
+// file if you want Katapult to run in silent mode.
+
+// You can also define the default colors for the controls here.
+// The following lines are an example:
+
+// holdoncolor=green
+// holdoffcolor=amber
+// toggleoncolor=green
+// toggleoffcolor=amber
+// faderoncolor=red
+// faderoffcolor=green
+// slideroncolor=greenlow
+// slideroffcolor=green
+// pagebuttononcolor=amber
+// pagebuttonoffcolor=amber
+// indicatoroncolor=green
+// indicatoroffcolor=red
+// padoncolor=yellow
+// padoffcolor=amber
+// meteroncolor=green
+// meteroffcolor=amber
+// progressoncolor=green
+// progressoffcolor=red
+// noteoncolor=green
+// noteoffcolor=yellow
+// cconcolor=yellow
+// ccoffcolor=yellow
+// kbdoncolor=greenl
+// kbdoffcolor=green
+
+// See the documentation for a list of usable colors.
+
+// Katapult can be started in headless mode by using this line:
+
+// headless=yes
+
+// You can customize the demo being shown when pressing the mixer
+// button by using the following commands:
+
+demochoice=6
+
+// choices here are 1-6, where 6 is a text scroller. Specify the
+// text like this:
+
+demotext=sarah
+demotextcolor=red
+
+// Or create your own bitmap and display whatever you want
+// like this
+in=Out
+out=In
